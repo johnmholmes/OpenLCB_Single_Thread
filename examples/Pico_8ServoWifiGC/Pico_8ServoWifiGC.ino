@@ -362,7 +362,7 @@ void setup()
   for(int i=0; i<NUM_SERVOS; i++) {                    // and setup and update the servos
     dPS("\nattach ", i); dPS(" on pin #", servopin[i]);
     //if(servo[i].attach(servopin[i], servoPwmMin, servoPwmMax)<0) dPS("***Servo failed to attach #", i);
-    servo[i].attach(servopin[i],540, 2600); //Added to give almost 180 degrees of movement
+    servo[i].attach(servopin[i],540, 2500); //Added to give almost 180 degrees of movement
     //servo[i].setSpeed(90);
     //servo[i].setEasingType(EASE_QUADRATIC_IN_OUT);     // user choice, see the ServoEasing library
     //servoSet(i, NODECONFIG.read( EEADDR(servoState[i]) ) ); 
